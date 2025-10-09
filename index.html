@@ -1,162 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supremo</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <script src="external.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supremo</title>
+  <meta name="description" content="Portfolio of John Berceles, Backend Developer & Computer Science Student. Specializing in scalable web apps with Java, Node.js, and more.">
+  <meta name="keywords" content="backend developer, computer science, Java, Node.js, portfolio">
+  <meta property="og:title" content="John Berceles - Supremo Portfolio">
+  <meta property="og:description" content="Building efficient web solutions.">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:url" content="https://svintjohn.github.io/Supremo-Portfolio/"> 
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="external.js"></script>
+</head>
 <body>
     
-    <!-- Lightning effect --> 
-    <div id="lightning"></div>
+  <!-- Lightning effect --> 
+  <div id="lightning"></div>
 
-    <!-- Intro effect --> 
-    <div id="thunder-overlay"></div>
+  <div id="thunder-overlay"></div>
 
-
-  <nav id="navbar">
-    <div class="nav-container">
-      <!-- Hamburger Button -->
-      <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </div>
-
-      <!-- Close Button -->
-      <div class="close-menu" id="close-menu">
-        <i class="fas fa-times"></i>
-      </div>
-
-      <!-- Normal Menu -->
-      <ul id="nav-links">
-        <li><a href="#welcome-section">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://github.com/Svintjohn" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/john-benedict-berceles-8787b0228" target="_blank">LinkedIn</a></li>
-      </ul>
+<nav id="navbar">
+  <div class="nav-container">
+    <!-- Hamburger Button -->
+    <div class="hamburger" id="hamburger" aria-label="Open navigation menu">
+      <i class="fas fa-bars"></i>
     </div>
-  </nav>
+
+    <!-- Close Button -->
+    <div class="close-menu" id="close-menu" aria-label="Close navigation menu">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <!-- Normal Menu -->
+    <ul id="nav-links">
+      <li><a href="#welcome-section">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/Svintjohn" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/john-benedict-berceles-8787b0228" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+</nav>
 
   <!-- Welcome Section -->
-    <section id="welcome-section">
-      <div class="welcome-text">
-        <h1>Hi, I’m John Berceles</h1>
-        <p>
-          Backend Developer & 2nd Year Computer Science Student.<br>
-          I build efficient and scalable web applications, explore new technologies, <br>
-          and turn ideas into functional software. Passionate about creating solutions <br>
-          that are both technically sound and user-friendly. Always eager to collaborate, <br>
-          learn, and tackle new challenges.
-        </p>
-      </div>
-    </section>
+  <section id="welcome-section">
+    <div class="welcome-text">
+      <h1>Hi, I’m John Berceles</h1>
+      <p>
+        Backend Developer & 2nd Year Computer Science Student.<br>
+        I build efficient and scalable web applications, explore new technologies, <br>
+        and turn ideas into functional software. Passionate about creating solutions <br>
+        that are both technically sound and user-friendly. Always eager to collaborate, <br>
+        learn, and tackle new challenges.
+      </p>
+    </div>
+  </section>
 
   <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <h2>My Projects</h2>
-      <div class="grid">
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="grid">
 
-        <!-- Project 1 -->
-        <article class="project-tile card">
-          <a class="thumb" href="https://github.com/Svintjohn/Flight-Reservation-Manager" target="_blank" rel="noopener">
-            <span class="badge">OOP</span>
-            <img src="img/flight.png" alt="Java project">
-          </a>
-          <div class="card-body">
-            <h3>Flight Reservation Manager (Java)</h3>
-            <p>The Flight Reservation System manages secure bookings, tracks passengers and seats, prevents overbooking, and generates reports.</p>
-            <div class="tags"><span>Java</span><span>OOP</span><span>CSV</span></div>
-            <div class="actions"><a class="btn btn-primary" href="https://github.com/Svintjohn/Flight-Reservation-Manager" target="_blank">Code</a></div>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project-tile card">
-          <a class="thumb" href="https://github.com/Svintjohn/Our-Lord-s-Angel-School.git" target="_blank" rel="noopener">
-            <span class="badge">Web</span>
-            <img src="img/school.png" alt="School Management System project">
-          </a>
-          <div class="card-body">
-            <h3>Our Lord's Angel School (HTML)</h3>
-            <p>A fully responsive school website showcasing academic programs, values education, extracurricular activities, and community engagement.</p>
-            <div class="tags"><span>HTML</span><span>CSS</span><span>Figma</span></div>
-            <div class="actions"><a class="btn btn-primary" href="https://github.com/Svintjohn/Our-Lord-s-Angel-School.git" target="_blank">Code</a></div>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="project-tile card">
-          <a class="thumb" href="https://github.com/Svintjohn/Weather-App" target="_blank" rel="noopener">
-            <span class="badge">App</span>
-            <img src="img/school.png" alt="Weather App project">
-          </a>
-          <div class="card-body">
-            <h3>Weather App (JavaScript)</h3>
-            <p>A real-time weather application fetching live data from an API, displaying current conditions and 5-day forecasts in a responsive design.</p>
-            <div class="tags"><span>JavaScript</span><span>YPM</span><span>HTML/CSS</span></div>
-            <div class="actions"><a class="btn btn-primary" href="https://github.com/Svintjohn/Weather-App" target="_blank">Code</a></div>
-          </div>
-        </article>
-
-        <!-- Project 4 --> 
-        <article class="project-tile card">
-          <a class="thumb" href="https://github.com/Svintjohn/Task-Manager" target="_blank" rel="noopener">
-            <span class="badge">Web</span>
-            <img src="img/school.png" alt="Task Manager project">
-          </a>
-          <div class="card-body">
-            <h3>Task Manager</h3>
-            <p>A task management system where users can create, edit, and track their tasks with authentication and database integration.</p>
-            <div class="tags"><span>Node.js</span><span>JavaScript</span><span>TailWind</span></div>
-            <div class="actions"><a class="btn btn-primary" href="https://github.com/Svintjohn/Task-Manager" target="_blank">Code</a></div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="contact-container">
-        <div class="contact-info">
-          <h2>Get in Touch</h2>
-          <p>Hit me up! Let's Collaborate!</p>
-          <ul>
-            <li><strong>Email:</strong> bercelesjohnbenedict25@gmail.com</li>
-            <li><strong>Phone:</strong> +63 919 833 7620</li>
-            <li><strong>Address:</strong> Holy Angel University</li>
-          </ul>
+      <!-- Project 1 -->
+      <article class="project-tile card">
+        <a class="thumb" href="https://github.com/Svintjohn/Flight-Reservation-Manager" target="_blank" rel="noopener">
+          <span class="badge">OOP</span>
+          <img src="img/flight.png" alt="Screenshot of Flight Reservation Manager Java application interface" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Flight Reservation Manager (Java)</h3>
+          <p>The Flight Reservation System manages secure bookings, tracks passengers and seats, prevents overbooking, and generates reports.</p>
+          <div class="tags"><span>Java</span><span>OOP</span><span>CSV</span></div>
+          <div class="actions"><a class="btn btn-primary" href="https://github.com/Svintjohn/Flight-Reservation-Manager" target="_blank">Code</a></div>
         </div>
-        <form class="contact-form" action="#" method="post">
-          <h3>Send a Message</h3>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="full name" required />
-          
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email here" required />
-          
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Message here" required></textarea>
-          
-          <button type="submit">Send</button>
-        </form>
-      </div>
+      </article>
 
-    <footer>
-      <div class="footer-icons">
-        <a href="https://github.com/Svintjohn" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/john-benedict-berceles-8787b0228" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:bercelesjohnbenedict@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-    </footer>
+      <!-- Project 2 -->
+      <article class="project-tile card">
+        <a class="thumb" href="https://github.com/Svintjohn/Our-Lord-s-Angel-School.git" target="_blank" rel="noopener">
+          <span class="badge">Web</span>
+          <img src="img/school.png" alt="Screenshot of Our Lord's Angel School responsive website homepage" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Our Lord's Angel School (HTML)</h3>
+          <p>A fully responsive school website showcasing academic programs, values education, extracurricular activities, and community engagement.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>Figma</span></div>
+          <div class="actions"><a class="btn btn-primary" href="https://github.com/Svintjohn/Our-Lord-s-Angel-School.git" target="_blank">Code</a></div>
+        </div>
+      </article>
 
-    </section>
-  </body>
+      <!-- Project 3 -->
+      <article class="project-tile card">
+        <a class="thumb" href="https://github.com/Svintjohn/Weather-App" target="_blank" rel="noopener">
+          <span class="badge">App</span>
+          <img src="img/weather.png" alt="Screenshot of Weather App displaying real-time forecast data" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Weather App (JavaScript)</h3>
+          <p>A real-time weather application fetching live data from an API, displaying current conditions and 5-day forecasts in a responsive design.</p>
+          <div class="tags"><span>JavaScript</span><span>API</span><span>HTML/CSS</span></div>
+          <div class="actions"><a class="btn btn-primary" href="https://github.com/Svintjohn/Weather-App" target="_blank">Code</a></div>
+        </div>
+      </article>
+
+      <!-- Project 4 --> 
+      <article class="project-tile card">
+        <a class="thumb" href="https://github.com/Svintjohn/Task-Manager" target="_blank" rel="noopener">
+          <span class="badge">Web</span>
+          <img src="img/task.png" alt="Screenshot of Task Manager dashboard with task list and authentication" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Task Manager</h3>
+          <p>A task management system where users can create, edit, and track their tasks with authentication and database integration.</p>
+          <div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+          <div class="actions"><a class="btn btn-primary" href="https://github.com/Svintjohn/Task-Manager" target="_blank">Code</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Hit me up! Let's Collaborate!</p>
+        <ul>
+          <li><strong>Email:</strong> bercelesjohnbenedict25@gmail.com</li>
+          <li><strong>Phone:</strong> +63 919 833 7620</li>
+          <li><strong>Address:</strong> Holy Angel University</li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contact-form" action="#" method="post">
+        <h3>Send a Message</h3>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email here" required />
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Message here" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-icons">
+      <a href="https://github.com/Svintjohn" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/john-benedict-berceles-8787b0228" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:bercelesjohnbenedict@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+</body>
 </html>
-
-
-
